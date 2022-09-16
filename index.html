@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Monia's Site</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="stylesheet.css"/>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+
+
+
+	 <title>Automatic Popup</title>
+   
+    <style media="screen"></style>
+
+</head>
+<body>
+
+
+	<div class="popup">
+        <button id="close" style="background-color: #7F4C69">&times;</button>
+        <h1 style="font-family: Onomatopee One;">Benvenuta Monia</h1>
+        <p>
+            Da qui partirà la tua avventura, ora che hai compiuto 30 anni sei pronta per il tuo destino. Questo sito l'ho creato appositamente per te, per indirizzarti in questo viaggio. Troverai i miei assistenti a controllare il tuo operato, affinchè tu non possa fregarmi. Questa sarà una sfida tra me, il re delle Escape Room, e te. Vedremo se sarai una sfidante alla mia altezza.
+        </p> <p>Takao Kato</p>
+        
+    </div>
+    <!--Script-->
+    <script type="text/javascript">
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        2000 
+    )
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+    </script>
+
+
+
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ff99d3">
+			  <a class="navbar-brand" href="#active">Il sito di Monia</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarScroll">
+			    <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+			      <li class="nav-item">
+			        <a class="nav-link" href="#active">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="storia.html">Storia</a>
+			      </li> 
+			      <li class="nav-item">
+			        <a class="nav-link" href="ricordi.html">Ricordi</a>
+			      </li>
+			      <li class="nav-item active dropdown">
+			        <a class="nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Luoghi</a>
+			        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+			          <li><a class="dropdown-item" href="luoghi.html">Tutti</a></li>
+			          <li><hr class="dropdown-divider"></li>
+			          <li><a class="dropdown-item" href="#">La giovinezza</a></li>
+			          <li><a class="dropdown-item" href="#">La vita adulta</a></li>
+			        </ul>
+			      <li class="nav-item active dropdown">
+			        <a class="nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Altro da scoprire</a>
+			        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+			          <li><a class="dropdown-item" href="#">Salvezza del mondo</a></li>
+			          <li><a class="dropdown-item" href="#">Fine del mondo</a></li>
+			        </ul>
+			      </li>
+			      
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Contatti</a>
+			      </li>
+			    </ul>
+			    <form class="d-flex">
+			      <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+			      <button class="btn" style="background-color:#7F4C69" type="submit">Cerca</button>
+			    </form>
+			  </div>
+		</nav>
+
+
+
+		<section style="max-height: 600px; background-color: #7F4C69;">
+				<div class="container-fluid">
+					<div class="row" >
+						<div class="col-md-12" >
+							<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+							  <ol class="carousel-indicators">
+							    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+							    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+							    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+							  </ol>
+							  <div class="carousel-inner">
+							    <div class="carousel-item active" style="max-height:600px; ">
+							      <img src="immagini/escape.jpg" class="d-block w-100" alt="#">
+							      <div class="carousel-caption  d-none d-md-block" >
+							      	<div class="container-fluid">
+							      		<a href="storia.html" title="Apri Storia delle Escape Room"  alt="Apri Storia delle Escape Room" style="color: white;">
+							      			<div class="row">
+							      				<div class="col-12" style="padding: 10px;background-color:#583549; opacity: 0.7; text-decoration-color: none;">
+							      				 <h2 a class="carousel-title">Storia delle Escape Room</h2>
+							       				 <h5>Naviga nella storia completa</h5>
+							       				 <p style="margin-top: 40px">Monia, la grande sfidante.</p>
+							      				</div>
+							      			</div>
+							      		</a>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="carousel-item" style="max-height:600px;">
+							      <img src="immagini/homericordi.jpg" class="d-block w-100" alt="#">
+							      <div class="carousel-caption  d-none d-md-block">
+							        <div class="container-fluid">
+							      		<a href="ricordi.html" title="Apri Ricordi"  alt="Apri Ricordi" style="color: white;">
+							      			<div class="row">
+							      				<div class="col-12" style="padding: 10px;background-color:#583549; opacity: 0.7; ">
+							      				 <h2 a class="carousel-title">Ricordi</h2>
+							       				 <h5>Naviga nei Ricordi di Monia</h5>
+							       				 <p style="margin-top: 40px">Monia insieme ai suoi simili.</p>
+							      				</div>
+							      			
+							      			</div>
+							      		</a>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="carousel-item" style="max-height:600px;">
+							      <img src="immagini/homeluoghi.jpg" class="d-block w-100" alt="#" >
+							      <div class="carousel-caption d-none d-md-block">
+							        <div class="container-fluid">
+							      		<a href="luoghi.html" title="Apri Luoghi"  alt="Apri Luoghi" style="color: white;">	
+							      			<div class="row">
+							      				<div class="col-12" style="padding: 10px;background-color:#583549; opacity: 0.7; ">
+							      				 <h2 a class="carousel-title">Luoghi</h2>
+							       				 <h5>Naviga attraverso i luoghi che hanno segnato la vita di Monia</h5>
+							       				 <p style="margin-top: 40px">Monia che mangia felice.</p>
+							      				</div>
+							      			</div>
+							      		</a>
+							        </div>
+							      </div>
+							    </div>
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
+						</div>
+					</div>	
+				</div>
+		</section>
+	</header>
+	<main>
+		<section>
+			<div class="container-fluid" style="background-color: white; padding:50px">
+				<div class="row">
+					<div class="col-md-1">
+					</div>
+					<div class="col-md-10">
+
+						<h1 a class="carousel-title"><b>Benvenuta Monia</b></h1>
+						<h6>Eccoti giunta nel tuo sito, creato appositamente da me, Takao Kato, per la tua gioia. Penserai di me che sono uno stalker, in realtà sono solo un attento osservatore, soprattutto da quando mi hanno tolto tutto. Scoprimi assieme a questo sito.</h6>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container-fluid" style="background-color: #ff99d3; padding:50px; ">
+					<div class="row">
+						<div class="col-md-1">
+						</div>
+						<div class="col-md-10">
+							<h2>L'importanza della Storia</h2>
+							<p><cite>A people without the knowledge of their past history, origin and culture is like a tree without roots.</cite>
+							Un popolo senza la conoscenza della propria storia, origine e cultura è come un albero senza radici.
+							(Marcus Garvey)</p><p></p>
+							<p>Se vorrai continuare il tuo percorso dovrai scoprire di più sul passato, dovrai conoscere ciò che è avvenuto per capire cosa accadrà. Questa componente importante del tuo viaggio sarà consultabile nella sezione <a href="storia.html" title="Apri Storia">Storia delle Escape Room</a>. Qui troverai informazioni su di me. La cultura è funzionale al tuo ruolo, piccola mia. </p>
+							<a href="storia.html" title="Apri Storia" class="btn" style="background-color: #ff4db2">Approfondisci</a>
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+				</div>
+				<div class="container-fluid" style="background-color: white; padding:50px">
+					<div class="row">
+						<div class="col-md-1">
+						</div>
+						<div class="col-md-10">
+							<h2>Ricordi</h2>
+							<p>In questa sezione è possibile conoscere ed approfondire la vita e le opere, nonchè i grandi successi della nostra amata eroina.</p>
+							<a href="ricordi.html"  title="Apri Ricordi" class="btn" style="background-color: #ff4db2">Vai a Ricordi</a>
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+				</div>
+		</section>
+	</main>
+
+	<main class="background-sfondo pb-5 pt-5">
+			<section>
+				<div class="container-fluid" style="margin-top:20px; padding:10px">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-10">
+							<h2 style="color: white; margin-top: 20px;">Naviga il tuo sito</h2></div>
+						<div class="col-md-1"></div>
+					</div>
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-3">
+							<div class="card shadow-lg p-3 mb-5 bg-white rounded">
+							  	<div class="card-body">
+								    <h5 class="card-title"><i class="bi bi-view-list"></i>  Storia</h5>
+								    <p class="card-text">La navigazione nella Storia permette di comprendere le motivazioni che hanno portato Takao Kato a voler distruggere tutte le escape room del mondo.</p>
+								    <a href="storia.html"  title="Apri Storia" class="btn" style="background-color: #ff4db2">Naviga la Storia</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card shadow-lg p-3 mb-5 bg-white rounded">
+							  	<div class="card-body">
+								    <h5 class="card-title"><i class="bi bi-calendar-week"></i>  Ricordi</h5>
+								    <p class="card-text">La navigazione attraverso i ricordi di Monia permette di capire perchè è stata scelta per questa impresa.</p>
+								    <a href="ricordi.html"  title="Apri Ricordi" class="btn" style="background-color: #ff4db2">Naviga i Ricordi</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card shadow-lg p-3 mb-5 bg-white rounded">
+							  	<div class="card-body">
+								    <h5 class="card-title"><i class="bi bi-geo-fill"></i>  Luoghi</h5>
+								    <p class="card-text">La navigazione sulla mappa geografica permette di scegliere cogliere in maniera immediata i luoghi di importanza rilevante per Monia.</p>
+								    <a href="luoghi.html" title="Apri Luoghi" class="btn" style="background-color: #ff4db2">Naviga i Luoghi</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+
+
+
+
+
+
+	<footer>
+			<div class="container-fluid" style="background-color:#ff99d3; padding: 10px; margin-top:">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="credits" style="margin-left: 30px; margin-right: 30px; color: grey">
+							<p>Per info compilare il modulo sottostante oppure utilizzare la sezione <a href="#">Contatti</a></p>
+							<form>
+							  <div class="form-row align-items-center">
+							    <div class="col-6">
+							      <label class="sr-only" for="inlineFormInput">Nome e Cognome</label>
+							      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Nome e Cognome">
+							    </div>
+							    <div class="col-6">
+							      <label class="sr-only" for="inlineFormInputGroup">Email</label>
+							      <div class="input-group mb-2">
+							        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Email">
+							      </div>
+							    </div>
+							  </div>
+							  <div class="form-row align-items-center">
+							   	<div class="col-11">
+							   	  <label class="sr-only" for="inlineFormInput">Testo</label>
+							      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Testo">
+							   	</div>
+							    <div class="col-1">
+							      <button type="submit" class="btn mb-2" style="background-color: #ff4db2">Invia</button>
+							    </div>
+							  </div>
+							</form>
+							<div>
+								<h5>Monia's Site</h5>
+								<p><a href="#" target="_blank" title="Apri Specifiche tecniche">Specifiche tecniche</a></p>
+								<p><a href="#"  title="Apri Note legali">Note legali</a></p>
+								<p><a href="#"  title="Apri Credits">Credits</a></p>
+								<p><a href="#"  title="Apri Licenze">Licenze</a></p>
+								<p>&copy; Monia Benassi, 18/09/1992</p>
+							</div>
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

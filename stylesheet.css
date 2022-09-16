@@ -1,0 +1,146 @@
+.navbar-brand {
+	font-family: 'Otomanopee One', sans-serif;
+}
+
+.carousel-title {
+	font-family: 'Otomanopee One', sans-serif;
+}
+
+.background-sfondo {
+	background-image: url("immagini/sfondo.jpg");
+	background-attachment: fixed; 
+	background-size: cover; 
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+#navbar a:link, a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+.nav-item a{
+	text-decoration: none;
+	color: black;
+}
+
+.dropdown-menu {
+	background-color: #ffdbef;
+}
+
+#dropdown-item a:active, a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.indizio a:link, a:visited {
+	color: #7F4C69;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+.indizio a:hover, a:active	{
+	color: white;
+	text-decoration: underline;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+
+
+
+.list-group-item {
+	width: 100%;
+	background-color: #a9dbdb;
+}
+
+
+.card-text a:link, a:visited {
+	color: 
+}
+
+
+
+
+
+
+
+
+	*,
+		*:before,
+		*:after{
+		    padding: 0;
+		    margin: 0;
+		    box-sizing: border-box;
+		}
+		
+		.popup{
+		    background-color: #ffffff;
+		    width: 420px;
+		    padding: 30px 40px;
+		    position: absolute;
+		    transform: translate(-50%,-50%);
+		    left: 50%;
+		    top: 50%;
+		    border-radius: 8px;
+		    display: none; 
+		    text-align: center;
+		    z-index: 20;
+		}
+
+
+
+		.popup button{
+		    display: block;
+		    margin:  0 0 20px auto;
+		    background-color: #7F4C69;
+		    font-size: 30px;
+		    color: #ffffff;
+				border-radius: 100%;
+				width: 40px;
+				height: 40px;
+		    border: none;
+		    outline: none;
+		    cursor: pointer;
+		}
+		.popup h1{
+			margin-top: -20px;
+			font-family: "Onomatopee One",sans-serif;
+			text-align: center;
+		}
+
+		.popup p{
+		    font-size: 14px;
+		    text-align: justify;
+		    margin: 20px 0;
+		    line-height: 25px;
+		}
+
+
+		
+	
